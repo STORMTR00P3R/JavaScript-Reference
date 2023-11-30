@@ -1,0 +1,26 @@
+html {
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+.weather-card {
+    float: left;
+}
+
+.icon {
+    display: inline;
+}
+
+.temperature {
+    font-size: 2.5rem;
+    display: inline;
+}
+
+.stats {
+    font-size: 0.75rem;
+    color: #a3a3a3;
+    display: inline;
+}
+
+.stats p {
+    display: inline;
+}
