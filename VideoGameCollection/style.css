@@ -100,7 +100,8 @@ body {
   -webkit-transition: all 500ms;
   -moz-transition: all 500ms;
   transition: all 500ms;
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/83141/vinyl.png"), url("https://preview.redd.it/fifty-fifty-the-1st-single-album-the-beginning-cupid-cover-v0-ujxvn57yg5ka1.jpg?auto=webp&s=464bef37a60cd8b6b2d0c607ecea65be3c4e85b8");
+  /* background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/83141/vinyl.png"), url("https://preview.redd.it/fifty-fifty-the-1st-single-album-the-beginning-cupid-cover-v0-ujxvn57yg5ka1.jpg?auto=webp&s=464bef37a60cd8b6b2d0c607ecea65be3c4e85b8"); */
+  background-image: url("https://pngimg.com/uploads/compact_disc/compact_disc_PNG102162.png");
   background-position: center, center;
   background-size: cover, 40% auto;
   background-repeat: no-repeat;
@@ -185,18 +186,26 @@ body {
   }
 }
 
-#prev {
+/* write this below */
+
+.collection-controls {
     position: absolute;
-    top: 50vh;
-    left: 25vh;
-    background: none;
-    
+    bottom: 10vh;
+    width: 100%;
+    /* margin: 0 auto; */
+    text-align: center;
+    letter-spacing: 8rem;
 }
 
-#next {
-    position: absolute;
-    top: 50vh;
-    right: 25vh;
+.collection-controls button {
+    border: none;
     background: none;
-    
+    width: 4rem;
+    height: 4rem;
+    font-size: 2rem;
+    color: #4e5e57;
+}
+
+.collection-controls button:hover {
+  cursor: pointer;
 }
