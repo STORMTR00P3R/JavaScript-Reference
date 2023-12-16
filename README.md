@@ -3,4 +3,4 @@
 
 # Live Page
 
-https://github.com/STORMTR00P3R/JavaScript-Reference
+https://STORMTR00P3R.github.io/JavaScript-Reference
