@@ -18,12 +18,12 @@ async function fetchWeatherData() {
 }
 
 function populateWeather(obj) {
-    const city = document.getElementsById('city');
-    const temperature = document.getElementsById('temperature');
-    const forecast = document.getElementsById('forecast');
-    const icon = document.getElementsById('icon');
-    const humidity = document.getElementsById('humidity');
-    const localTime = document.getElementsById('localtime');
+    const city = document.getElementById('city');
+    const temperature = document.getElementById('temperature');
+    const forecast = document.getElementById('forecast');
+    const icon = document.getElementById('icon');
+    const humidity = document.getElementById('humidity');
+    const localTime = document.getElementById('localtime');
 
     localTime.textContext = `Local Time: ${obj.location.localtime.slice(-5)}`;
     city.textContext = obj.location.name;
