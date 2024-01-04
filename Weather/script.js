@@ -27,7 +27,7 @@ function populateWeather(obj) {
 
     localTime.textContext = `Local Time: ${obj.location.localtime.slice(-5)}`;
     city.textContext = obj.location.name;
-    temperature.textContext = `${Math.floor(obj.current.feelslife_f)} ºF`;
+    temperature.textContext = `${Math.floor(obj.current.feelslike_f)} ºF`;
     forecast.textContext = obj.current.condition.text;
     icon.src = obj.current.condition.icon;
     humidity.textContext = `Humidity: ${obj.current.humidity}%`;
