@@ -18,19 +18,21 @@ async function fetchWeatherData() {
 }
 
 function populateWeather(obj) {
+    // const searchResults = document.getElementById('search-results');
     const city = document.getElementById('city');
-    const temperature = document.getElementById('temperature');
-    const forecast = document.getElementById('forecast');
-    const icon = document.getElementById('icon');
+    const temperature = document.getElementById("temperature");
+    const forecast = document.getElementById("forecast");
+    const icon = document.getElementById("icon");
     const humidity = document.getElementById('humidity');
     const localTime = document.getElementById('localtime');
-
-    localTime.textContext = `Local Time: ${obj.location.localtime.slice(-5)}`;
-    city.textContext = obj.location.name;
-    temperature.textContext = `${Math.floor(obj.current.feelslike_f)} ºF`;
-    forecast.textContext = obj.current.condition.text;
+    
+    // searchResults.style.visibility = "visible";
+    localTime.textContent = `Local Time: ${obj.location.localtime.slice(-5)}`;
+    city.textContent = obj.location.name;
+    temperature.textContent = `${Math.floor(obj.current.feelslike_f)} °F`;
+    forecast.textContent = obj.current.condition.text;
     icon.src = obj.current.condition.icon;
-    humidity.textContext = `Humidity: ${obj.current.humidity}%`;
+    humidity.textContent = `Humidity: ${obj.current.humidity}%`;
 }
 
 fetchWeatherData();
