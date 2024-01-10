@@ -1,10 +1,8 @@
-const API_KEY = '657a30cb69d44cdba9a01524231401';
-const LOCATION = '89141';
+const API_KEY = '';
+const LOCATION = '12345';
 
 async function fetchWeatherData() {
     console.log("Sending request...");
-    // const location = document.getElementById('searchInput').value;
-    // const requestURL = "https://api.weatherapi.com/v1/current.json?key=657a30cb69d44cdba9a01524231401&q=" + location;
     const requestURL = `https://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${LOCATION}`
     const request = new Request(requestURL);
     const response = await fetch(request);
